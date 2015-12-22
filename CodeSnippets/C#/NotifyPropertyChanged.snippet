@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Notifying Property With SetValueIfChanged Usage</Title>
+      <Author>Kenny Pflug</Author>
+      <Description>Creates a new property with backing field that uses the IRaisePropertyChanged interface to call SetValueIfChanged</Description>
+      <Shortcut>NotifyingPropertyWithSetValueIfChanged</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>PropertyType</ID>
+          <Default>int</Default>
+          <ToolTip>Enter the type of the property here.</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>PropertyName</ID>
+          <Default>PropertyName</Default>
+          <ToolTip>Enter the name of the new property here.</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>FieldName</ID>
+          <Default>_fieldName</Default>
+          <ToolTip>Enter the name of the backing field here.</ToolTip>
+        </Literal>
+      </Declarations>
+      <Code Language="CSharp">
+        <![CDATA[private $PropertyType$ $FieldName$;
+        public $PropertyType$ $PropertyName$
+        {
+            get { return $FieldName$; }
+            set { this.SetValueIfChanged(ref $FieldName$, value); }
+        }]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

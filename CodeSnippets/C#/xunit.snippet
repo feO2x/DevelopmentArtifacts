@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>xunit.net Fact</Title>
+      <Author>Kenny Pflug</Author>
+      <Description>Creates a new test fact.</Description>
+      <Shortcut>Fact</Shortcut>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>TestMethodName</ID>
+          <Default>TestMethodName</Default>
+          <ToolTip>Enter name of test method here.</ToolTip>
+        </Literal>
+      </Declarations>
+      <Code Language="CSharp">
+        <![CDATA[[Fact]
+        public void $TestMethodName$()
+        {
+            $end$
+        }]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>xunit.net Theory</Title>
+      <Author>Kenny Pflug</Author>
+      <Description>Creates a new data-driven test</Description>
+      <Shortcut>Theory</Shortcut>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>MethodName</ID>
+          <Default>TestMethodName</Default>
+          <ToolTip>Enter the name of test method here.</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>Parameters</ID>
+          <Default>parameters</Default>
+          <ToolTip>Enter the list of parameters here.</ToolTip>
+        </Literal>
+      </Declarations>
+      <Code Language="CSharp">
+        <![CDATA[[Theory]
+        public void $MethodName$($Parameters$)
+        {
+            $end$
+        }]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

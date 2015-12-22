@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>MS Unit Test</Title>
+      <Author>Kenny Pflug</Author>
+      <Description>Creates a new test method.</Description>
+      <Shortcut>TestMethod</Shortcut>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>TestMethodName</ID>
+          <Default>TestMethodName</Default>
+          <ToolTip>Enter name of test method here.</ToolTip>
+        </Literal>
+      </Declarations>
+      <Code Language="CSharp">
+        <![CDATA[[TestMethod]
+        public void $TestMethodName$()
+        {
+            $end$
+        }]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>MS UI Unit Test</Title>
+      <Author>Kenny Pflug</Author>
+      <Description>Creates a new WinRT test method that runs on a UI thread.</Description>
+      <Shortcut>UITestMethod</Shortcut>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>TestMethodName</ID>
+          <Default>TestMethodName</Default>
+          <ToolTip>Enter name of test method here.</ToolTip>
+        </Literal>
+      </Declarations>
+      <Code Language="CSharp">
+        <![CDATA[[UITestMethod]
+        public void $TestMethodName$()
+        {
+            $end$
+        }]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
