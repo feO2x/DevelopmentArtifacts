@@ -4,7 +4,7 @@
     <Header>
       <Title>xunit.net Fact</Title>
       <Author>Kenny Pflug</Author>
-      <Description>Creates a new test fact.</Description>
+      <Description>Creates a new test.</Description>
       <Shortcut>Fact</Shortcut>
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
@@ -30,9 +30,93 @@
 
   <CodeSnippet Format="1.0.0">
     <Header>
+      <Title>xunit.net Asynchronous Fact</Title>
+      <Author>Kenny Pflug</Author>
+      <Description>Creates a new asynchronous test.</Description>
+      <Shortcut>AsyncFact</Shortcut>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>TestMethodName</ID>
+          <Default>TestMethodName</Default>
+          <ToolTip>Enter name of test method here.</ToolTip>
+        </Literal>
+      </Declarations>
+      <Code Language="CSharp">
+        <![CDATA[[Fact]
+        public async Task $TestMethodName$()
+        {
+            $end$
+        }]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>xunit.net Static Fact</Title>
+      <Author>Kenny Pflug</Author>
+      <Description>Creates a new static test.</Description>
+      <Shortcut>StaticFact</Shortcut>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>TestMethodName</ID>
+          <Default>TestMethodName</Default>
+          <ToolTip>Enter name of test method here.</ToolTip>
+        </Literal>
+      </Declarations>
+      <Code Language="CSharp">
+        <![CDATA[[Fact]
+        public static void $TestMethodName$()
+        {
+            $end$
+        }]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>xunit.net Static Asynchronous Fact</Title>
+      <Author>Kenny Pflug</Author>
+      <Description>Creates a new static asynchronous test.</Description>
+      <Shortcut>StaticAsyncFact</Shortcut>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>TestMethodName</ID>
+          <Default>TestMethodName</Default>
+          <ToolTip>Enter name of test method here.</ToolTip>
+        </Literal>
+      </Declarations>
+      <Code Language="CSharp">
+        <![CDATA[[Fact]
+        public static void $TestMethodName$()
+        {
+            $end$
+        }]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+
+  <CodeSnippet Format="1.0.0">
+    <Header>
       <Title>xunit.net Theory</Title>
       <Author>Kenny Pflug</Author>
-      <Description>Creates a new data-driven test</Description>
+      <Description>Creates a new data-driven test.</Description>
       <Shortcut>Theory</Shortcut>
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
@@ -60,4 +144,104 @@
       </Code>
     </Snippet>
   </CodeSnippet>
+
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>xunit.net Asynchronous Theory</Title>
+      <Author>Kenny Pflug</Author>
+      <Description>Creates a new asynchronous data-driven test.</Description>
+      <Shortcut>AsyncTheory</Shortcut>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>MethodName</ID>
+          <Default>TestMethodName</Default>
+          <ToolTip>Enter the name of test method here.</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>Parameters</ID>
+          <Default>parameters</Default>
+          <ToolTip>Enter the list of parameters here.</ToolTip>
+        </Literal>
+      </Declarations>
+      <Code Language="CSharp">
+        <![CDATA[[Theory]
+        public async Task $MethodName$($Parameters$)
+        {
+            $end$
+        }]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>xunit.net Static Theory</Title>
+      <Author>Kenny Pflug</Author>
+      <Description>Creates a new static data-driven test.</Description>
+      <Shortcut>StaticTheory</Shortcut>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>MethodName</ID>
+          <Default>TestMethodName</Default>
+          <ToolTip>Enter the name of test method here.</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>Parameters</ID>
+          <Default>parameters</Default>
+          <ToolTip>Enter the list of parameters here.</ToolTip>
+        </Literal>
+      </Declarations>
+      <Code Language="CSharp">
+        <![CDATA[[Theory]
+        public static void $MethodName$($Parameters$)
+        {
+            $end$
+        }]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>xunit.net Static Asynchronous Theory</Title>
+      <Author>Kenny Pflug</Author>
+      <Description>Creates a new static asynchronous data-driven test.</Description>
+      <Shortcut>StaticAsyncTheory</Shortcut>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>MethodName</ID>
+          <Default>TestMethodName</Default>
+          <ToolTip>Enter the name of test method here.</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>Parameters</ID>
+          <Default>parameters</Default>
+          <ToolTip>Enter the list of parameters here.</ToolTip>
+        </Literal>
+      </Declarations>
+      <Code Language="CSharp">
+        <![CDATA[[Theory]
+        public static async Task $MethodName$($Parameters$)
+        {
+            $end$
+        }]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+  
 </CodeSnippets>
