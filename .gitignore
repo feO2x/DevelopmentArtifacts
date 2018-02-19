@@ -1,3 +1,4 @@
+*.vs/
 *.cer
 *.pfx
 *.pvk
