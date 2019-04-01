@@ -1,0 +1,28 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=AB3327059BA5FD42B453685D835444A5/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=AB3327059BA5FD42B453685D835444A5/Shortcut/@EntryValue">sfc</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=AB3327059BA5FD42B453685D835444A5/Description/@EntryValue">Safely cast variable</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=AB3327059BA5FD42B453685D835444A5/Text/@EntryValue">$VARTYPE$ $VAR$ = $VAR1$ as $TYPE$;
+
+if ($VAR$ != null)
+{
+  $END$
+}</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=AB3327059BA5FD42B453685D835444A5/Reformat/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=AB3327059BA5FD42B453685D835444A5/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=AB3327059BA5FD42B453685D835444A5/Applicability/=Live/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=AB3327059BA5FD42B453685D835444A5/Scope/=2C285F182AC98D44B0B4F29D4D2149EC/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=AB3327059BA5FD42B453685D835444A5/Scope/=2C285F182AC98D44B0B4F29D4D2149EC/Type/@EntryValue">InCSharpStatement</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=AB3327059BA5FD42B453685D835444A5/Scope/=2C285F182AC98D44B0B4F29D4D2149EC/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=AB3327059BA5FD42B453685D835444A5/Field/=VAR1/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=AB3327059BA5FD42B453685D835444A5/Field/=VAR1/Expression/@EntryValue">variableOfType("")</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=AB3327059BA5FD42B453685D835444A5/Field/=VAR1/Order/@EntryValue">0</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=AB3327059BA5FD42B453685D835444A5/Field/=TYPE/@KeyIndexDefined">True</s:Boolean>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=AB3327059BA5FD42B453685D835444A5/Field/=TYPE/Order/@EntryValue">1</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=AB3327059BA5FD42B453685D835444A5/Field/=VARTYPE/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=AB3327059BA5FD42B453685D835444A5/Field/=VARTYPE/Expression/@EntryValue">suggestVariableType()</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=AB3327059BA5FD42B453685D835444A5/Field/=VARTYPE/InitialRange/@EntryValue">-1</s:Int64>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=AB3327059BA5FD42B453685D835444A5/Field/=VARTYPE/Order/@EntryValue">2</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=AB3327059BA5FD42B453685D835444A5/Field/=VAR/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=AB3327059BA5FD42B453685D835444A5/Field/=VAR/Expression/@EntryValue">suggestVariableName()</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=AB3327059BA5FD42B453685D835444A5/Field/=VAR/Order/@EntryValue">3</s:Int64></wpf:ResourceDictionary>
